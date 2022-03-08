@@ -1,0 +1,83 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Lora;
+}
+:root
+{
+  --blackShadow:3px 2px 8px rgba(0, 0, 0, 0.3);
+}
+.header{
+  background-color: #3178b3;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  padding: 15px;
+}
+.header h1{
+  color: whitesmoke;
+  text-shadow: 1px 2px 2px whitesmoke;
+}
+.header button{
+  margin: 15px;
+}
+.titleTask{
+
+  text-align: center;
+  margin-top: 1%;
+  margin-bottom: 2%;
+  font-family: Lora;
+  word-spacing: 5px;
+  font-size: 30px;
+  letter-spacing: 2px;
+}
+.divNoTask {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin-top: 2%;
+}
+.divNoTask img {
+  position: relative;
+  left: 25%;
+}
+.noTask{
+  font-family: Lora;
+  word-spacing: 5px;
+  font-size: 30px;
+  margin-top: 5%;
+}
+.divTaskList{
+  width: 100%;
+}
+.divTaskList p{
+  width: 60%;
+  background-color:rgb(250, 250, 250);
+  margin: auto;
+  padding: 15px;
+  margin-bottom: 20px;
+  cursor: pointer;
+  transition: ease-out 0.8s;
+ 
+  /* transform: scale(1.05); */
+  border:1px solid rgb(230, 235, 235);
+  border-radius: 5px;
+
+  
+}
+.divTaskList p:hover{
+  border: none;
+  transform: scale(1.05);
+  box-shadow:  var(--blackShadow);
+  -webkit-box-shadow: var(--blackShadow);
+  -moz-box-shadow: var(--blackShadow);
+}
+.divTaskList p span{
+  float: right;
+  color: red; 
+  font-size: 25px;
+  position: relative;
+  bottom: 5px;
+}

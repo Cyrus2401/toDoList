@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My ToDoList</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="bootstrap-5.0.2-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="bootstrap-icons/bootstrap-icons.css">
+    <link rel="shortcut icon" href="list1.png" >
+</head>
+<body>
+    <div class="header">
+        <h1>To Do Lists</h1>
+
+        <div>
+            <button type="button" class="btn btn-light mb-3" data-bs-toggle="modal" data-bs-target="#addTask" data-bs-whatever="taskToDo">Ajouter une Tâche</button>
+
+            <button type="button" class="btn btn-light mb-3" data-bs-toggle="modal" data-bs-target="#deleteTask" data-bs-whatever="taskToDo">Supprimer toutes les tâches</button>
+        </div>
+    </div> 
+
+    <div class="divNoTask">
+        <img src="" alt="">
+        <h3 class="noTask"></h3>
+    </div>
+
+    <h3 class="titleTask"></h3>
+
+    <div class="divTaskList">
+
+    </div>
+
+    <!-- Modal pour l'ajout d'une tâche -->
+
+    <div class="modal fade" id="addTask" tabindex="-1" aria-labelledby="modalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalLabel">AJOUTER UNE TACHE</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form action="" class="form">   
+                            <div class="mb-3">
+                                <label for="inputTask" class="col-form-label">Tâche à faire</label>
+                                <textarea name="" class="form-control inputTask"></textarea>
+                                <button type="submit" class="btn btn-primary mt-2 btnAddTask">Ajouter une tâche</button> 
+                            </div>
+                    </form>
+                </div> 
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal pour la suppression d'une tâche -->
+
+    <div class="modal fade" id="deleteTask" tabindex="-1" aria-labelledby="modalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <form action="" class="form">   
+                        <div class="mb-3">
+                            <label for="inputTask" class="col-form-label mb-3">Voulez-vous vraiment supprimer toutes les tâches ?</label>
+                            
+                            <button type="submit" class="btn btn-danger" id="deleteAllTask">Supprimer</button> 
+                            <button type="button" class="btn btn-primary" data-bs-dismiss="modal" aria-label="Close" >Annuler</button>
+                        </div>
+                    </form>
+                </div> 
+            </div>
+        </div>
+    </div>
+
+    <script src="index.js"></script>
+    <script src="bootstrap-5.0.2-dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
