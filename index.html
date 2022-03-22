@@ -12,18 +12,22 @@
     <link rel="shortcut icon" href="list1.png" >
 </head>
 <body>
-    <div class="header">
-        <h1>To Do Lists</h1>
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <h1 class="">To Do Lists</h1>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTest" aria-controls="navbarTest" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
 
-        <div>
+        <div class="collapse navbar-collapse" id="navbarTest">
             <button type="button" class="btn btn-light mb-3" data-bs-toggle="modal" data-bs-target="#addTask" data-bs-whatever="taskToDo">Ajouter une Tâche</button>
 
             <button type="button" class="btn btn-light mb-3" data-bs-toggle="modal" data-bs-target="#deleteTask" data-bs-whatever="taskToDo">Supprimer toutes les tâches</button>
         </div>
-    </div> 
+    </nav>
+    
 
     <div class="divNoTask">
-        <img src="" alt="">
+        <img src="" alt="" width="40%">
         <h3 class="noTask"></h3>
     </div>
 
